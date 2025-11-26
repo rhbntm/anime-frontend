@@ -1,4 +1,4 @@
-<img width="1599" height="810" alt="image" src="https://github.com/user-attachments/assets/79de2a0c-6d94-4d00-a7bc-c40343123349" /># Animan Forgis on the Jeep 9/1/2025
+# Animan Forgis on the Jeep 9/1/2025
 
 ## What is this?
 Okay, so this is my final project for school. Basically, I needed to build a system that connects to a backend, and since I spend way too much time watching anime, I figured... why not make an anime discovery app?
