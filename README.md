@@ -1,12 +1,41 @@
-# React + Vite
+# Animan Forgis on the Jeep 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is this?
+Okay, so this is my final project for school. Basically, I needed to build a system that connects to a backend, and since I spend way too much time watching anime, I figured... why not make an anime discovery app?
 
-Currently, two official plugins are available:
+It allows you to search for anime, see the top-ranked ones, and save your favorites. It's not perfect, but it works (mostly)!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  The Tech Stack (aka "What I ChatGPT'd")
+I used a bunch of stuff to make this work:
+- **Frontend:** React + Vite (because `create-react-app` is too slow lol)
+- **Styling:** Tailwind CSS (writing vanilla CSS is a nightmare, fight me)
+- **Backend:** CodeIgniter 4 (PHP)
+- **Database:** MySQL
 
-## Expanding the ESLint configuration
+##  Features
+Here's what you can actually do on the site:
+1.  **Search Anime:** Type in "Boku no Pico" or whatever and it pulls data from my backend.
+2.  **Top Anime:** The home page shows the top-rated stuff right now.
+3.  **Favorites:** You can save anime to your profile (you need to be logged in though).
+4.  **Dashboard:** A simple dashboard to manage your account.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## The Struggle
+Honest talk: this was harder than I thought.
+- **The Backend Folder:** I literally lost my backend code for a solid hour. I named the folder `anime-api/anime-api` and forgot where I put it. 💀
+- **CORS Errors:** I spent 3 hours fixing a red error in the console only to realize I forgot to enable CORS in PHP.
+- **State Management:** React state is confusing, but `useQuery` saved my life.
+
+## How to Run This Bad Boy
+
+### Frontend
+1.  Open this folder in your terminal.
+2.  Run `npm install` (if you haven't already).
+3.  Run `npm run dev`.
+4.  Click the link (usually `http://localhost:5173`).
+
+### Backend
+1.  Go to the backend folder (good luck finding it... jk, it's in `anime-api`).
+2.  Run `php spark serve`.
+3.  Pray it connects. 🙏
+
+
